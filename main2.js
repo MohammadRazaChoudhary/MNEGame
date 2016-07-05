@@ -36,7 +36,7 @@ this.scale.setScreenSize( true );
 
 };
 
-var game = new Phaser.Game(300, 450, Phaser.AUTO);
+var game = new Phaser.Game(Phaser.AUTO);
 
 game.state.add('main', mainState); 
 
