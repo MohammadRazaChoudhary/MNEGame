@@ -1,5 +1,12 @@
 var mainState = {
     preload: function() { 
+        
+        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+//this.scale.pageAlignHorizontally = true;
+this.scale.pageAlignVertically = true;
+this.scale.setScreenSize( true );
+
+
                 game.load.image('grass', 'grass.png');
                 game.load.image('plant', 'plant.png');
                 game.load.image('background', 'background.png');
@@ -29,7 +36,7 @@ var mainState = {
 
 };
 
-var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.AUTO, 'gameArea');
+var game = new Phaser.Game(300, 450, Phaser.AUTO);
 
 game.state.add('main', mainState); 
 
