@@ -1,2 +1,2 @@
 # MNEGame
-game
+Game for WeChat 
