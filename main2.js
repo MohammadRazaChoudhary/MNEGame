@@ -1,36 +1,32 @@
 var mainState = {
     preload: function() { 
-                game.load.image('pic', 'pics/cube.png');
+                game.load.image('grass', 'assets/grass.png');
+                game.load.image('plant', 'assets/plant.png');
+                game.load.image('background', 'assets/background.png');
+                game.load.atlasJSONHash('zombie', 'assets/sprites.png' , 'assets/sprites.json');
     },
 
     create: function() { 
-    // Change the background color of the game to blue
-    game.stage.backgroundColor = '#71c5cf';
+    // game.stage.backgroundColor = '#71c5cf';
+    game.add.image(0,0, 'grass');
+    sprite = game.add.sprite(10, 10, 'zombie', 'zombie1.png');
+    plant = game.add.image(0, 300, 'plant');
+    game.add.image(0, 0, 'background');
+    gameOver = game.add.text(180, 20, "MNE Creations", {font: "30px Arial", fill: "#ffffff"});
 
-         // game.add.sprite(0,0, 'pic');
-
-    gameOver = game.add.text(180,20, "MNE Creations", {font: "30px Arial", fill: "#ffffff"});
-    score = game.add.text(20,20, "Hello World!", {font: "10px Arial", fill: "#ffffff"});
     },
 
     update: function() {
 
     },
 
- 
-    jump: function() {
-    },
-
-
     restartGame: function() {
-
-
     game.state.start('main');
     },
 
 };
 
-var game = new Phaser.Game(400, 490);
+var game = new Phaser.Game(414, 736);
 
 game.state.add('main', mainState); 
 
