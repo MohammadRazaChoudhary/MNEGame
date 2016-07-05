@@ -1,10 +1,5 @@
 var mainState = {
     preload: function() { 
-        
-        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-
-
-
                 game.load.image('grass', 'grass.png');
                 game.load.image('plant', 'plant.png');
                 game.load.image('background', 'background.png');
@@ -34,7 +29,7 @@ var mainState = {
 
 };
 
-var game = new Phaser.Game(300, 450, Phaser.AUTO);
+var game = new Phaser.Game(300, 450);
 
 game.state.add('main', mainState); 
 
