@@ -1,9 +1,9 @@
 var mainState = {
     preload: function() { 
-                game.load.image('grass', 'assets/grass.png');
-                game.load.image('plant', 'assets/plant.png');
-                game.load.image('background', 'assets/background.png');
-                game.load.atlasJSONHash('zombie', 'assets/sprites.png' , 'assets/sprites.json');
+                game.load.image('grass', 'grass.png');
+                game.load.image('plant', 'plant.png');
+                game.load.image('background', 'background.png');
+                game.load.atlasJSONHash('zombie', 'sprites.png' , 'sprites.json');
     },
 
     create: function() { 
