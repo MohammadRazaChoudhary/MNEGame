@@ -46,19 +46,6 @@ var bootState = {
                 this.game.load.image('background', 'background.png');
 
     },
-    
-      init: function() {
-    this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    this.game.scale.minWidth = 490;
-    this.game.scale.minHeight = 290;
-    this.game.scale.maxWidth = 980;
-    this.game.scale.maxHeight = 580;
-    this.game.scale.pageAlignHorizontally = true;
-    this.game.scale.pageAlignVertically = true;
-    this.game.scale.forceOrientation(true, false);
-    this.game.scale.setScreenSize(true);
-    return this.game.input.maxPointers = 1;
-  },
 
     create: function() { 
     // game.stage.backgroundColor = '#71c5cf';
