@@ -40,10 +40,11 @@
 
 var bootState = {
     preload: function() { 
+                        game.load.atlasJSONHash('sprites', 'sprites.png' , 'sprites.json');
                 game.load.image('grass', 'grass.png');
                 game.load.image('plant', 'plant.png');
                 game.load.image('background', 'background.png');
-                game.load.atlasJSONHash('sprites', 'sprites.png' , 'sprites.json');
+
     },
 
     create: function() { 
