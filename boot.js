@@ -23,7 +23,9 @@ var bootState = {
     this.game.add.image(0, 0, 'background');
     
     this.game.add.image(0, 0, 'plant');
+    gameOver = game.add.text(180, 20, "MNE Creations", {font: "10px Arial", fill: "#ffffff"});
     return this.game.state.start('Title');
+    
   },
   update: function() {
     
