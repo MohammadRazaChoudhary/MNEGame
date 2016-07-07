@@ -40,20 +40,20 @@
 
 var bootState = {
     preload: function() { 
-                        game.load.atlasJSONHash('sprites', 'sprites.png' , 'sprites.json');
-                game.load.image('grass', 'grass.png');
-                game.load.image('plant', 'plant.png');
-                game.load.image('background', 'background.png');
+                        this.game.load.atlasJSONHash('sprites', 'sprites.png' , 'sprites.json');
+                this.game.load.image('grass', 'grass.png');
+                this.game.load.image('plant', 'plant.png');
+                this.game.load.image('background', 'background.png');
 
     },
 
     create: function() { 
     // game.stage.backgroundColor = '#71c5cf';
-    game.add.image(0,0, 'grass');
-    sprite = game.add.sprite(10, 10, 'sprites', "zombie1.png");
+    this.game.add.image(0,0, 'grass');
+    this.sprite = game.add.sprite(10, 10, 'sprites', "zombie1.png");
     plant = game.add.image(0, 300, 'plant');
-    game.add.image(0, 0, 'background');
-    gameOver = game.add.text(180, 20, "MNE Creations", {font: "10px Arial", fill: "#ffffff"});
+    this.game.add.image(0, 0, 'background');
+    this.gameOver = game.add.text(180, 20, "MNE Creations", {font: "10px Arial", fill: "#ffffff"});
 
     game.plant = game.add.physicsGroup(Phaser.Physics.ARCADE, game.world, 'plant');
     Phaser.ScaleManager = this (this, 1000,1450);
