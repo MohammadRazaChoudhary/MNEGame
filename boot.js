@@ -21,6 +21,9 @@ var bootState = {
     this.game.CELL_HEIGHT = 290 / 7;
     this.game.add.image(0, 0, 'grass');
     return this.game.state.start('Title');
+  },
+  update: function() {
+    
   }
 };
 
