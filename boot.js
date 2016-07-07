@@ -47,23 +47,23 @@ var bootState = {
 
     },
     
-      init: function() {
-    this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    this.game.scale.minWidth = 490;
-    this.game.scale.minHeight = 290;
-    this.game.scale.maxWidth = 980;
-    this.game.scale.maxHeight = 580;
-    this.game.scale.pageAlignHorizontally = true;
-    this.game.scale.pageAlignVertically = true;
-    this.game.scale.forceOrientation(true, false);
-    this.game.scale.setScreenSize(true);
-    return this.game.input.maxPointers = 1;
-  },
+//       init: function() {
+//     this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+//     this.game.scale.minWidth = 490;
+//     this.game.scale.minHeight = 290;
+//     this.game.scale.maxWidth = 980;
+//     this.game.scale.maxHeight = 580;
+//     this.game.scale.pageAlignHorizontally = true;
+//     this.game.scale.pageAlignVertically = true;
+//     this.game.scale.forceOrientation(true, false);
+//     this.game.scale.setScreenSize(true);
+//     return this.game.input.maxPointers = 1;
+//   },
 
     create: function() { 
-    // game.stage.backgroundColor = '#71c5cf';
-    //     this.game.CELL_WIDTH = 490 / 12;
-    // this.game.CELL_HEIGHT = 290 / 7;
+    game.stage.backgroundColor = '#71c5cf';
+    this.game.CELL_WIDTH = 490 / 12;
+    this.game.CELL_HEIGHT = 290 / 7;
     this.game.add.image(0,0, 'grass');
     this.sprite = game.add.sprite(10, 10, 'sprites', "zombie1.png");
     plant = game.add.image(0, 300, 'plant');
