@@ -21,3 +21,9 @@ var bootState = {
     return this.game.state.start('Title');
   }
 };
+
+var game = new Phaser.Game(490, 290);
+
+game.state.add('boot', bootState); 
+
+game.state.start('boot'); 
