@@ -18,7 +18,7 @@ var bootState = {
   create: function() {
     this.game.CELL_WIDTH = 490 / 12;
     this.game.CELL_HEIGHT = 290 / 7;
-    game.add.image(0, 0, 'background');
+    game.add.image(0, 0, 'grass');
     return this.game.state.start('Title');
   }
 };
