@@ -57,6 +57,9 @@ var bootState = {
 
     game.plant = game.add.physicsGroup(Phaser.Physics.ARCADE, game.world, 'plant');
     Phaser.ScaleManager = this (this, 1000,1450);
+    
+         this.game.CELL_WIDTH = 490 / 12;
+     this.game.CELL_HEIGHT = 290 / 7;
 
     },
 
