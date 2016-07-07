@@ -2,6 +2,7 @@ var bootState = {
   preload: function() {
     this.game.load.atlasJSONHash('sprites', "sprites.png", "sprites.json");
     this.game.load.image('background', 'background.png');
+    this.game.load.image('plant', 'plant.png');
 
   },
   init: function() {
@@ -20,6 +21,8 @@ var bootState = {
     this.game.CELL_WIDTH = 490 / 12;
     this.game.CELL_HEIGHT = 290 / 7;
     this.game.add.image(0, 0, 'background');
+    
+    this.game.add.image(0, 0, 'plant');
     return this.game.state.start('Title');
   },
   update: function() {
