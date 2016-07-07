@@ -38,7 +38,7 @@
 
 // game.state.start('boot'); 
 
-var mainState = {
+var bootState = {
     preload: function() { 
                 game.load.image('grass', 'grass.png');
                 game.load.image('plant', 'plant.png');
@@ -69,8 +69,8 @@ var mainState = {
 
 };
 
-var game = new Phaser.Game(300, 400);
+var game = new Phaser.Game(300, 450);
 
-game.state.add('main', mainState); 
+game.state.add('boot', bootState); 
 
-game.state.start('main'); 
+game.state.start('boot'); 
