@@ -41,6 +41,11 @@ BasicGame.Preloader.prototype = {
 
 	update: function () {
 
+		var text;
+		text = this.game.add.text(this.game.world.width / 2, this.game.world.height / 2, 'MNE Creations', {
+			font: '20px sans-serif',
+			fill: '#FFF'
+		});
 		//	You don't actually need to do this, but I find it gives a much smoother game experience.
 		//	Basically it will wait for our audio file to be decoded before proceeding to the MainMenu.
 		//	You can jump right into the menu if you want and still play the music, but you'll have a few
