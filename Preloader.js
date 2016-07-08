@@ -15,7 +15,7 @@ BasicGame.Preloader.prototype = {
 		//	These are the assets we loaded in Boot.js
 		//	A nice sparkly background and a loading progress bar
 		this.background = this.add.sprite(0, 0, 'preloaderBackground');
-		gameOver = game.add.text(180, 20, "MNE Creations", {font: "10px Arial", fill: "#FF0000"});
+		gameOver = game.add.text(180, 20, "MNE Creations", {font: "10px Arial", fill: "#FFFFFF"});
 
 		this.preloadBar = this.add.sprite(100, 100, 'preloaderBar');
 		
