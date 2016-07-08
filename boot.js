@@ -62,8 +62,8 @@ var bootState = {
 
     create: function() { 
     game.stage.backgroundColor = '#71c5cf';
-    this.game.CELL_WIDTH = 490 / 12;
-    this.game.CELL_HEIGHT = 290 / 7;
+    // this.game.CELL_WIDTH = 490 / 12;
+    // this.game.CELL_HEIGHT = 290 / 7;
     this.game.add.image(0,0, 'grass');
     this.sprite = game.add.sprite(10, 10, 'sprites', "zombie1.png");
     plant = game.add.image(0, 300, 'plant');
