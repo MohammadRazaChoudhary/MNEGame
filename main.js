@@ -1,6 +1,5 @@
 var Game, game;
 
-window.game = game = new Phaser.Game(300, 450, Phaser.AUTO, '');
 
 game.state.add('Boot', bootState);
 
