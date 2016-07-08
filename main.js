@@ -10,4 +10,5 @@ game.state.add('Play', playState);
 
 game.state.add('Over', overState);
 
-game.state.start('Boot');
+// game.state.start('Boot');
+require(['Boot']);
