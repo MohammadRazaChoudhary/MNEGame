@@ -27,7 +27,7 @@ BasicGame.Preloader.prototype = {
 		this.load.image('titlepage', 'images/title.jpg');
 		this.load.atlas('playButton', 'images/play_button.png', 'images/play_button.json');
 		this.load.audio('titleMusic', ['audio/main_menu.mp3']);
-		this.load.bitmapFont('fonts', 'font.png', 'font.xml');
+		// this.load.bitmapFont('fonts', 'font.png', 'font.xml');
 		//	+ lots of other required assets here
 
 	},
@@ -43,7 +43,7 @@ BasicGame.Preloader.prototype = {
 
 		var text;
 		text = this.game.add.text(this.game.world.width / 2, this.game.world.height / 2, 'MNE Creations', {
-			font: '20px fonts',
+			font: '20px sans-serif',
 			fill: '#FFF'
 		});
 		//	You don't actually need to do this, but I find it gives a much smoother game experience.
