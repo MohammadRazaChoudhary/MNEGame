@@ -1,4 +1,3 @@
-
 BasicGame.Preloader = function (game) {
 
 	this.background = null;
@@ -15,11 +14,9 @@ BasicGame.Preloader.prototype = {
 		//	These are the assets we loaded in Boot.js
 		//	A nice sparkly background and a loading progress bar
 		this.background = this.add.sprite(0, 0, 'preloaderBackground');
-		gameOver = game.add.text(180, 20, "MNE Creations", {font: "10px Arial", fill: "#FFFFFF"});
-		this.plant = this.add.sprite(200,200, 'plant'); 
 		this.preloadBar = this.add.sprite(100, 100, 'preloaderBar');
-		
-		
+		this.plant = this.add.sprite(200,200, 'plant');
+
 		//	This sets the preloadBar sprite as a loader sprite.
 		//	What that does is automatically crop the sprite from 0 to full-width
 		//	as the files below are loaded in.
