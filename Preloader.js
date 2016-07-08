@@ -43,7 +43,7 @@ BasicGame.Preloader.prototype = {
 
 		var text;
 		text = this.game.add.text(this.game.world.width / 2, this.game.world.height / 2, 'MNE Creations', {
-			font: '20px fonts',
+			font: '80px fonts',
 			fill: '#FFF'
 		});
 		//	You don't actually need to do this, but I find it gives a much smoother game experience.
