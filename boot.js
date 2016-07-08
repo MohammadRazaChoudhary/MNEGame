@@ -58,6 +58,8 @@ TranslationDefender.Boot.prototype = {
         this.scale.forcePortrait = true;
         this.scale.setScreenSize = true;
         
+        this.input.addPointer();
+        this.stage.backgroundColor = '#71c5cf';
     }
 }
 // var bootState = {
