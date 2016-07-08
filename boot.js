@@ -55,7 +55,6 @@ var bootState = {
     this.sprite = game.add.sprite(10, 10, 'sprites', "zombie1.png");
     plant = game.add.image(0, 300, 'plant');
     this.game.add.image(0, 0, 'background');
-    this.gameOver = game.add.text(180, 20, "MNE Creations", {font: "10px Arial", fill: "#ffffff"});
 
     game.plant = game.add.physicsGroup(Phaser.Physics.ARCADE, game.world, 'plant');
     Phaser.ScaleManager = this (this, 1000,1450);
