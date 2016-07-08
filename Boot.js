@@ -39,8 +39,8 @@ BasicGame.Boot.prototype = {
 
         //  Here we load the assets required for our preloader 
         this.load.image('grassBackground', 'grassBackground.png')
-        this.load.image('preloaderBackground', 'images/preloader_background.jpg');
-        this.load.image('preloaderBar', 'images/preloader_bar.png');
+        this.load.image('preloaderBackground', 'preloaderBackground.jpg');
+        this.load.image('preloadBar', 'preloadBar.png');
         this.load.image('plant', 'plant.png');
 
     },
