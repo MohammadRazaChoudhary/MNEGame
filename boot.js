@@ -60,6 +60,7 @@ var bootState = {
 
     game.plant = game.add.physicsGroup(Phaser.Physics.ARCADE, game.world, 'plant');
     Phaser.ScaleManager = this (this, 1000,1450);
+    return this.game.state.start('Title');
     
 
     },
