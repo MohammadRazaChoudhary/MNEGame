@@ -47,18 +47,6 @@ var bootState = {
 
     },
     
-    init: function() {
-    game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    game.scale.minWidth = 490;
-    game.scale.minHeight = 290;
-    game.scale.maxWidth = 980;
-    game.scale.maxHeight = 580;
-    game.scale.pageAlignHorizontally = true;
-    game.scale.pageAlignVertically = true;
-    game.scale.forceOrientation(true, false);
-    game.scale.setScreenSize(true);
-    return game.input.maxPointers = 1;
-  },
 
     create: function() { 
     game.stage.backgroundColor = '#71c5cf';
