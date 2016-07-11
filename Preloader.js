@@ -41,9 +41,7 @@ BasicGame.Preloader.prototype = {
 		var text;
 		text = this.game.add.text(100, 100, 'MNE Creations', {
 			font: '80px fonts',
-			fill: '#FFF',
-			text.anchor.setTo(0.5, 0.5);
-
-  }
+			fill: '#FFF'
+  });
 };
 
