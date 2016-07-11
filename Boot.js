@@ -44,6 +44,8 @@ BasicGame.Boot.prototype = {
         this.load.image('preloaderBackground', 'preloaderBackground.jpg');
         this.load.image('preloaderBar', 'preloaderBar.png');
         this.load.image('plant', 'plant.png');
+        this.game.load.atlasJSONHash('sprites', "sprites.png", "sprites.json");
+
 
     },
 
