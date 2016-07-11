@@ -45,7 +45,7 @@ BasicGame.Preloader.prototype = {
     //  return function() {
     //    return this.state.start('Play');
     return this.input.onTap(this.state.start('Play'));
-      };
+      //};
     })(this));
   }
 };
