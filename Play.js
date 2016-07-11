@@ -28,6 +28,13 @@ module.exports = {
     // return this.game.audio.zombiesAreComing.play();
   },
   update: function() {
+    
+    text = this.game.add.text(150, 100, 'Play!', { 
+       font: '40px sans-serif', 
+       fill: '#FFF' 
+    }); 
+
+
     return this.game.physics.arcade.overlap(this.game.projectiles, this.game.zombies, this.handleZombieHit, null, this);
   },
   handleZombieHit: function(projectile, zombie) {
