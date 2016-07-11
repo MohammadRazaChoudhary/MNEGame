@@ -15,7 +15,7 @@ BasicGame.Preloader.prototype = {
 		//	A nice sparkly background and a loading progress bar
 		this.background = this.add.sprite(0, 0, 'preloaderBackground');
 		this.preloadBar = this.add.sprite(this.game.world.width / 3, this.game.world.height / 3, 'preloaderBar');
-		this.plant = this.add.sprite(200,200, 'plant');
+
 
 		//	This sets the preloadBar sprite as a loader sprite.
 		//	What that does is automatically crop the sprite from 0 to full-width
@@ -34,7 +34,7 @@ BasicGame.Preloader.prototype = {
 
 
 	update: function () {
-
+		this.plant = this.add.image(200,200, 'plant');
 		var text;
 		text = this.game.add.text(100, 100, 'MNE Creations', {
       font: '20px sans-serif',
