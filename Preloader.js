@@ -36,8 +36,8 @@ BasicGame.Preloader.prototype = {
 	update: function () {
 		this.plant = this.add.image(200,200, 'plant');
 		var text;
-		text = this.game.add.text(130, 100, 'MNE Creations', {
-      font: '45px sans-serif',
+		text = this.game.add.text(115, 100, 'MNE Creations', {
+      font: '40px sans-serif',
       fill: '#FFF'
     });
     text.anchor.setTo(0.5, 0.5);
