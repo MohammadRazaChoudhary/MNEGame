@@ -40,8 +40,16 @@ BasicGame.Preloader.prototype = {
 
 		var text;
 		text = this.game.add.text(100, 100, 'MNE Creations', {
-			font: '80px fonts',
-			fill: '#FFF'
-  });
+      font: '20px sans-serif',
+      fill: '#FFF'
+    });
+    text.anchor.setTo(0.5, 0.5);
+    return this.game.input.onTap.add((function(_this) {
+      return function() {
+        return _this.game.state.start('Play');
+      };
+    })(this));
+  }
 };
+
 
