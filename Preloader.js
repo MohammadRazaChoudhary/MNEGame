@@ -43,7 +43,7 @@ BasicGame.Preloader.prototype = {
     text.anchor.setTo(0.5, 0.5);
     return this.game.input.onTap.add((function(_this) {
       return function() {
-        return this.game.state.start('Play');
+        return this.state.start('Play');
       };
     })(this));
   }
