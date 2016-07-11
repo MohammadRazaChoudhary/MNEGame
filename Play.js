@@ -21,11 +21,11 @@ var playState = {
     this.game.time.events.repeat(3 * 1000, 9999, (function() {
       return new Zombie(this);
     }), this);
-    this.game.audio = {};
-    this.game.audio.pea_shoot = this.game.add.audio('peaShoot');
-    this.game.audio.splat = this.game.add.audio('splat');
-    this.game.audio.zombiesAreComing = this.game.add.audio('zombiesAreComing');
-    return this.game.audio.zombiesAreComing.play();
+    // this.game.audio = {};
+    // this.game.audio.pea_shoot = this.game.add.audio('peaShoot');
+    // this.game.audio.splat = this.game.add.audio('splat');
+    // this.game.audio.zombiesAreComing = this.game.add.audio('zombiesAreComing');
+    // return this.game.audio.zombiesAreComing.play();
   },
   update: function() {
     return this.game.physics.arcade.overlap(this.game.projectiles, this.game.zombies, this.handleZombieHit, null, this);
