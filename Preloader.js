@@ -46,7 +46,7 @@ BasicGame.Preloader.prototype = {
         return this.state.start('Play');
       };
     //})(this));
-  //}
+  }
 };
 
 
