@@ -52,8 +52,8 @@ BasicGame.Boot.prototype = {
     },
 
     gameResized: function (width, height) {
-        this.game.width = 300;
-        this.game.height = 450;
+        // this.game.width = 300;
+        // this.game.height = 450;
         
     },
 
