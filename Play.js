@@ -4,11 +4,7 @@ Zombie = require('zombie.js');
 
 Plant = require('plant.js');
 
-BasicGame.Play = function(game) {
-  
-};
-
-BasicGame.Play.prototype = {
+module.exports = {
   init: function() {
     return this.game.input.onTap.add((function(_this) {
       return function() {
