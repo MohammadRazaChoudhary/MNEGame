@@ -32,7 +32,7 @@ BasicGame.Preloader.prototype = {
 
 	},
 	
-	update: create() {
+	create: function() {
 		this.game.state.start("Play");
 	}
 
@@ -43,13 +43,13 @@ BasicGame.Preloader.prototype = {
       font: '20px sans-serif',
       fill: '#FFF'
     });
-    text.anchor.setTo(0.5, 0.5);
-    return this.game.input.onTap.add((function(_this) {
-      return function() {
-        return _this.game.state.start('Play');
-      };
-    })(this));
-  }
+  //  text.anchor.setTo(0.5, 0.5);
+  //  return this.game.input.onTap.add((function(_this) {
+  //    return function() {
+  //      return _this.game.state.start('Play');
+  //    };
+  //  })(this));
+  //}
 };
 
 
