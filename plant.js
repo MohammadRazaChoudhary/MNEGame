@@ -2,7 +2,7 @@
 var Pea, Plant,
   bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-Pea = require('./pea.js');
+Pea = require('pea.js');
 
 module.exports = Plant = (function() {
   function Plant(state1, position) {
