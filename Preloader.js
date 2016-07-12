@@ -38,11 +38,11 @@ BasicGame.Preloader.prototype = {
       fill: '#FFF'
     });
     text.anchor.setTo(0.5, 0.5);
-    return this.input.onTap.add((function(_this) {
+    //return this.input.onTap.add((function(_this) {
       return function() {
         return this.state.start('Play');
       };
-    })(this));
+    //})(this));
   }
 };
 
