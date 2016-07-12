@@ -12,7 +12,7 @@ BasicGame.Play.prototype = {
   init: function() {
     return this.game.input.onTap.add((function(_this) {
       return function() {
-        return _this.handleTap(_this.game.input.activePointer);
+        return this.handleTap(this.game.input.activePointer);
       };
     })(this));
   },
