@@ -30,7 +30,7 @@ BasicGame.Preloader.prototype = {
 	},
 	
 	create: function () {
-		game.stage.backgroundColor = "#FFF";
+		game.stage.backgroundColor = "#FFFFFF";
 	},
 
 
