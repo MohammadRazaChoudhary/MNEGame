@@ -13,11 +13,11 @@ BasicGame.Preloader.prototype = {
 
 		//	These are the assets we loaded in Boot.js
 		//	A nice sparkly background and a loading progress bar
-		this.background = this.add.sprite(0, 0, 'preloaderBackground
+		this.background = this.add.sprite(0, 0, 'preloaderBackground');
 		this.setLoadingText(this.load.progress);
 		this.preloadBar = this.add.sprite(this.world.centerX - loadingBarFrame.width / 2, loadingBarY, "Loading"); 
-                   this._loadingBar.anchor.setTo(0, 0);           
-                    this.load.setPreloadSprite(this._loadingBar);
+                   this.preloadBar.anchor.setTo(0, 0);           
+                    this.load.setPreloadSprite(this.PreloadBar);
 
 		//	Here we load the rest of the assets our game needs.
 		//	As this is just a Project Template I've not provided these assets, the lines below won't work as the files themselves will 404, they are just an example of use.
