@@ -14,7 +14,7 @@ BasicGame.Preloader.prototype = {
 		//	These are the assets we loaded in Boot.js
 		//	A nice sparkly background and a loading progress bar
 		// this.background = this.add.sprite(0, 0, 'preloaderBackground');
-		this.preloadBar = this.add.sprite(150, this.game.world.height / 2, 'preloaderBar');
+		this.preloadBar = this.add.sprite(100, this.game.world.height / 2, 'preloaderBar');
 
 		this.setLoadingText(this.load.progress);
 		// this.preloadBar = this.add.sprite(this.world.centerX - loadingBarFrame.width / 2, loadingBarY, "Loading"); 
