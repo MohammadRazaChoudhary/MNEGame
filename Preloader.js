@@ -28,6 +28,10 @@ BasicGame.Preloader.prototype = {
 		//	+ lots of other required assets here
 
 	},
+	
+	create:function () {
+		game.stage.backgroundColor = "#FFF";
+	}
 
 
 	update: function () {
@@ -35,7 +39,7 @@ BasicGame.Preloader.prototype = {
 		var text;
 		text = this.game.add.text(150, 100, 'MNE Creations', {
       font: '40px sans-serif',
-      fill: '#FFF'
+      fill: '#000000'
     });
     text.anchor.setTo(0.5, 0.5);
     //return this.input.onTap.add((function(_this) {
