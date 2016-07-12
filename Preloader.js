@@ -13,14 +13,11 @@ BasicGame.Preloader.prototype = {
 
 		//	These are the assets we loaded in Boot.js
 		//	A nice sparkly background and a loading progress bar
-		this.background = this.add.sprite(0, 0, 'preloaderBackground');
-		this.preloadBar = this.add.sprite(150, this.game.world.height / 2, 'preloaderBar');
-
-
-		//	This sets the preloadBar sprite as a loader sprite.
-		//	What that does is automatically crop the sprite from 0 to full-width
-		//	as the files below are loaded in.
-		this.load.setPreloadSprite(this.preloadBar);
+		this.background = this.add.sprite(0, 0, 'preloaderBackground
+		this.setLoadingText(this.load.progress);
+		this.preloadBar = this.add.sprite(this.world.centerX - loadingBarFrame.width / 2, loadingBarY, "Loading"); 
+                   this._loadingBar.anchor.setTo(0, 0);           
+                    this.load.setPreloadSprite(this._loadingBar);
 
 		//	Here we load the rest of the assets our game needs.
 		//	As this is just a Project Template I've not provided these assets, the lines below won't work as the files themselves will 404, they are just an example of use.
@@ -41,11 +38,11 @@ BasicGame.Preloader.prototype = {
       fill: '#FFF'
     });
     text.anchor.setTo(0.5, 0.5);
-    //return this.input.onTap.add((function(_this) {
+    return this.input.onTap.add((function(_this) {
       return function() {
         return this.state.start('Play');
       };
-    //})(this));
+    })(this));
   }
 };
 
