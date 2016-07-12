@@ -16,7 +16,7 @@ BasicGame.Preloader.prototype = {
 		// this.background = this.add.sprite(0, 0, 'preloaderBackground');
 		this.preloadBar = this.add.sprite(150, this.game.world.height / 2, 'preloaderBar');
 
-		// this.setLoadingText(this.load.progress);
+		this.setLoadingText(this.load.progress);
 		// this.preloadBar = this.add.sprite(this.world.centerX - loadingBarFrame.width / 2, loadingBarY, "Loading"); 
                    this.preloadBar.anchor.setTo(0, 0);           
                     this.load.setPreloadSprite(this.preloadBar);
